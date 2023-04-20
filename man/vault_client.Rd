@@ -31,6 +31,10 @@ can be left blank.  However, if your vault server uses a
 self-signed certificate you will need to provide this.  Defaults
 to the environment variable \code{VAULT_CAPATH}, which is the
 same as vault's command line client.}
+
+\item{headers}{Optional HTTP headers to include in all requests.
+This is useful to set the vault namespace, e.g
+\code{httr::add_headers("X-Vault-Namespace" = "my_namespace/")}}
 }
 \description{
 Make a vault client.  This must be done before accessing the
@@ -177,6 +181,8 @@ directly, but via the \code{vault_client} method.
 \item{\code{addr}}{The vault address, including protocol and port}
 
 \item{\code{tls_config}}{The TLS config, if used}
+
+\item{\code{headers}}{HTTP headers to include in all request}
 }
 \if{html}{\out{</div>}}
 }

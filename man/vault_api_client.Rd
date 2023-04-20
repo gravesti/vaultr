@@ -101,6 +101,8 @@ Create a new api client
 \item{\code{addr}}{Address of the vault server}
 
 \item{\code{tls_config}}{Optional TLS config}
+
+\item{\code{headers}}{Optional headers to include in all HTTP requests}
 }
 \if{html}{\out{</div>}}
 }
